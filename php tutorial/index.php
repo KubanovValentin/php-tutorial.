@@ -25,8 +25,20 @@
 
 <div id="content">
     <?php
-        $password = '';
-        var_dump($password == '');
+        $id = '1';
+        $name = 'Iphone';
+        $desc = 'Здесь будет описание для телефона Iphone';
+        $img = '/images/goods/iphone.jpg';
+        $price = '2000$';
+
+        echo  $id . '<br>';
+        echo  $name . '<br>';
+        echo  $desc . '<br>';
+        echo  $img . '<br>';
+        echo  $price . '<br>';
+
+        $product = [1, 'Iphone', 'Здесь будет описание для телефона Iphone', '/images/goods/iphone.jpg', '2000$'];
+        echo $product[0];
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
