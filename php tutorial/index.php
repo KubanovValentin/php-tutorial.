@@ -38,7 +38,17 @@
         echo  $price . '<br>';
 
         $product = [1, 'Iphone', 'Здесь будет описание для телефона Iphone', '/images/goods/iphone.jpg', '2000$'];
-        echo $product[0];
+        $product = [
+            'id' => 1,
+            'name' => 'Iphone',
+            'desc' => 'Здесь будет описание для телефона Iphone',
+            'img' => '/images/goods/iphone.jpg',
+            'price' => '2000$',
+        ];
+        echo $product['name'] . 'br';
+        echo $product['desc'] . 'br';
+        $product['count'] = 162;
+        var_dump($product);
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
