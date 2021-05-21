@@ -25,8 +25,8 @@
 
 <div id="content">
     <?php
-        $myVariable = 'hello word!';
-        echo $myVariable;
+        $myVariable = '482';
+        var_dump($myVariable)
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
