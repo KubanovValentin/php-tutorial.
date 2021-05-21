@@ -24,7 +24,11 @@
 </header>
 
 <div id="content">
-    <div id="promo">
+    <?php
+        echo("hello word");
+        echo("by word");
+    ?>
+    <!-- <div id="promo">
         <h1 id="promoText">
             Здесь будет рекламный заголовок
         </h1>
@@ -139,7 +143,7 @@
         </div>
 
 
-    </div>
+    </div> -->
 </div>
 
 <footer>
