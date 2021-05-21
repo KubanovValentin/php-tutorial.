@@ -25,8 +25,8 @@
 
 <div id="content">
     <?php
-        $myVariable = '482';
-        var_dump($myVariable)
+        $password = '';
+        var_dump($password == '');
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
