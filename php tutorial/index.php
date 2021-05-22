@@ -31,24 +31,34 @@
                 'name' => 'Iphone',
                 'desc' => 'Здесь будет описание для телефона Iphone',
                 'img'=> '/images/goods/iphone.jpg',
-                'price' => '2000$',
+                'price' => '2000$'
             ],
             [
                 'id' => 2,
                 'name' => 'HTC',
                 'desc' => 'Здесь будет описание для телефона HTC',
                 'img'=> '/images/goods/htc.jpg',
-                'price' => '1200$',
+                'price' => '1200$'
             ],
             [
                 'id' => 3,
                 'name' => 'Samsung',
                 'desc' => 'Здесь будет описание для телефона Samsung',
                 'img' => '/images/goods/samsung.jpg',
-                'price' => '1400$',
+                'price' => '1400$'
             ],
 
         ];
+        $goods[] = [
+            'id' => 4,
+            'name' => 'Explay',
+            'desc' => 'Здесь будет описание для телефона Explay',
+            'img' => '/images/goods/explay.jpg',
+            'price' => '800$',
+            'discount' => 20,
+            'count' => 34
+        ];
+        $goods[2]['discount'] = 20;
         echo '<pre>';
         var_dump($goods)
         // $id = '1';
