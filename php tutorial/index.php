@@ -25,30 +25,56 @@
 
 <div id="content">
     <?php
-        $id = '1';
-        $name = 'Iphone';
-        $desc = 'Здесь будет описание для телефона Iphone';
-        $img = '/images/goods/iphone.jpg';
-        $price = '2000$';
+        $goods = [
+            [
+                'id' => 1,
+                'name' => 'Iphone',
+                'desc' => 'Здесь будет описание для телефона Iphone',
+                'img'=> '/images/goods/iphone.jpg',
+                'price' => '2000$',
+            ],
+            [
+                'id' => 2,
+                'name' => 'HTC',
+                'desc' => 'Здесь будет описание для телефона HTC',
+                'img'=> '/images/goods/htc.jpg',
+                'price' => '1200$',
+            ],
+            [
+                'id' => 3,
+                'name' => 'Samsung',
+                'desc' => 'Здесь будет описание для телефона Samsung',
+                'img' => '/images/goods/samsung.jpg',
+                'price' => '1400$',
+            ],
 
-        echo  $id . '<br>';
-        echo  $name . '<br>';
-        echo  $desc . '<br>';
-        echo  $img . '<br>';
-        echo  $price . '<br>';
-
-        $product = [1, 'Iphone', 'Здесь будет описание для телефона Iphone', '/images/goods/iphone.jpg', '2000$'];
-        $product = [
-            'id' => 1,
-            'name' => 'Iphone',
-            'desc' => 'Здесь будет описание для телефона Iphone',
-            'img' => '/images/goods/iphone.jpg',
-            'price' => '2000$',
         ];
-        echo $product['name'] . 'br';
-        echo $product['desc'] . 'br';
-        $product['count'] = 162;
-        var_dump($product);
+        echo '<pre>';
+        var_dump($goods)
+        // $id = '1';
+        // $name = 'Iphone';
+        // $desc = 'Здесь будет описание для телефона Iphone';
+        // $img = '/images/goods/iphone.jpg';
+        // $price = '2000$';
+
+        // echo  $id . '<br>';
+        // echo  $name . '<br>';
+        // echo  $desc . '<br>';
+        // echo  $img . '<br>';
+        // echo  $price . '<br>';
+
+        // $product = [1, 'Iphone', 'Здесь будет описание для телефона Iphone', '/images/goods/iphone.jpg', '2000$'];
+        // $product = [
+        //     'id' => 1,
+        //     'name' => 'Iphone',
+        //     'desc' => 'Здесь будет описание для телефона Iphone',
+        //     'img' => '/images/goods/iphone.jpg',
+        //     'price' => '2000$',
+        // ];
+        // echo $product['name'] . 'br';
+        // echo $product['desc'] . 'br';
+        // $product['count'] = 162;
+        // var_dump($product);
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
