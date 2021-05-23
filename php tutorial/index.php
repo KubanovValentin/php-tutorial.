@@ -25,39 +25,73 @@
 
 <div id="content">
     <?php
-$goods= [
-        [
-            'id' => 1,
-            'name' => 'Iphone',
-            'desc' => 'Здесь будет описание для телефона Iphone',
-            'img'=> '/images/goods/iphone.jpg',
-            'price' => '2000$'
-        ],
-        [
-            'id' => 2,
-            'name' => 'HTC',
-            'desc' => 'Здесь будет описание для телефона HTC',
-            'img'=> '/images/goods/htc.jpg',
-            'price' => '1200$'
-        ],
-        [
-            'id' => 3,
-            'name' => 'Samsung',
-            'desc' => 'Здесь будет описание для телефона Samsung',
-            'img' => '/images/goods/samsung.jpg',
-            'price' => '1400$'
-        ],
-    ];
-    foreach ($goods as $key => $good) {
-        echo 'Ключ массива: '. $key . '<br>';
-        echo  $good['id'] . '<br>';
-        echo  $good['name'] . '<br>';
-        echo  $good['desc'] . '<br>';
-        echo  $good['img'] . '<br>';
-        echo  $good['price'] . '<br>';
+ $goods= [
+            [
+                'id' => 1,
+                'name' => 'Iphone',
+                'desc' => 'Здесь будет описание для телефона Iphone',
+                'img'=> '/images/goods/iphone.jpg',
+                'price' => '2000$'
+            ],
+            [
+                'id' => 2,
+                'name' => 'HTC',
+                'desc' => 'Здесь будет описание для телефона HTC',
+                'img'=> '/images/goods/htc.jpg',
+                'price' => '1200$'
+            ],
+            [
+                'id' => 3,
+                'name' => 'Samsung',
+                'desc' => 'Здесь будет описание для телефона Samsung',
+                'img' => '/images/goods/samsung.jpg',
+                'price' => '1400$'
+            ],
+        ];
+        $page = $_GET['page'];
+        if (!isset($page)) {
+            echo 'Здесь, вместо этой записи, будет контент для главной страницы';
+        } elseif ($page == 'shop') {
+            echo 'Здесь будет страница с товарами';
+        } elseif ($page == 'product') {
+            echo 'А тут у нас будет страница с открытым товаром';
+        }
 
-        echo '<hr>';
-    };
+
+
+// $goods= [
+//         [
+//             'id' => 1,
+//             'name' => 'Iphone',
+//             'desc' => 'Здесь будет описание для телефона Iphone',
+//             'img'=> '/images/goods/iphone.jpg',
+//             'price' => '2000$'
+//         ],
+//         [
+//             'id' => 2,
+//             'name' => 'HTC',
+//             'desc' => 'Здесь будет описание для телефона HTC',
+//             'img'=> '/images/goods/htc.jpg',
+//             'price' => '1200$'
+//         ],
+//         [
+//             'id' => 3,
+//             'name' => 'Samsung',
+//             'desc' => 'Здесь будет описание для телефона Samsung',
+//             'img' => '/images/goods/samsung.jpg',
+//             'price' => '1400$'
+//         ],
+//     ];
+//     foreach ($goods as $key => $good) {
+//         echo 'Ключ массива: '. $key . '<br>';
+//         echo  $good['id'] . '<br>';
+//         echo  $good['name'] . '<br>';
+//         echo  $good['desc'] . '<br>';
+//         echo  $good['img'] . '<br>';
+//         echo  $good['price'] . '<br>';
+
+//         echo '<hr>';
+//     };
 
 
 
